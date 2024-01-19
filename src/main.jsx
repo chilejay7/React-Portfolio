@@ -17,23 +17,29 @@ import './index.css';
 
 const router = createBrowserRouter([
  { 
+  // This sets the root path and renders App.jsx.
   path: '/',
   element: <App />,
   errorElement: <ErrorPage />,
+  // The child routes defined below are rendered through the Outlet component in App.jsx.
   children: [
     {
+      // Index true sets this as the default route and renders HomePage.jsx
       index: true,
       element: <HomePage />,
     },
     {
+      // The /about route renders the AboutPage.
       path: 'about',
       element: <AboutPage />,
     },
     {
+      // The /contact route renders the ContactPage.
       path: 'contact',
       element: <ContactPage />,
     },
     {
+      // The /projects route renders the ProjectPage.
       path: 'projects',
       element: <ProjectPage />,
     },
