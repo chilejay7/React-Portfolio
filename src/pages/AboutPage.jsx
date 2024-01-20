@@ -16,6 +16,8 @@ function AboutPage() {
                     teams and take on challenging projects in a growth-oriented environment.
                 </p>
 
+                <img src="src\assets\family_photo.jpeg"></img>
+
                 <p>
                     I am married and a father of three, two girls and a boy. My hobbies include sports, namely soccer. I am
                     a big fan of Tottenham Hotspur, and I have followed the English club for years. The Kansas Jayhawks are
