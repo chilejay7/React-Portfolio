@@ -1,11 +1,47 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  flex-basis: 100%;
+  font-family: 'Lora', serif;
+  /* font-family: 'Merriweather', serif; */
 }
 
-.logo {
+body {
+  flex-basis: 100%;
+}
+
+header {
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  text-align: center;
+  font-weight: bold;
+  border-radius: .5em;
+  background-image: url('./assets/headerbkgd.jpg');
+  background-size: cover;
+  padding: 20px;
+}
+
+.nav ul {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid black 2px;
+  font-size: 1.5rem;
+}
+
+.nav ul a {
+  margin: 0 auto;
+  color: black;
+  font-weight: bold;
+
+  &:hover {
+    color: white;
+    translate: -10px;
+  }
+}
+
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -39,4 +75,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */

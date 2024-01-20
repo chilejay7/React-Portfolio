@@ -1,7 +1,7 @@
 function NavBar({ links }) {
     return (
-        <nav className="navbar">
-            <ul className="navbar">
+        <nav className="nav">
+            <ul className="navList">
                 {links.map((link) => link)}
             </ul>
         </nav>
