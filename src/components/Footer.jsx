@@ -7,6 +7,7 @@ import SocialIcons from './UI/SocialIcons';
 const urls = [
     'https://www.linkedin.com/in/cody-burkholder-4b072848/',
     'https://github.com/chilejay7',
+    'mailto:codyburk7@gmail.com',
 ]
 
 function Footer() {
