@@ -26,12 +26,12 @@ const router = createBrowserRouter([
     children: [
       {
         // Index true sets this as the default route and renders HomePage.jsx
-        index: true,
+        path: 'home',
         element: <HomePage />,
       },
       {
         // The /about route renders the AboutPage.
-        path: 'about',
+        index: true,
         element: <AboutPage />,
       },
       {
