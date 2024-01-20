@@ -30,7 +30,7 @@ header {
   flex-basis: 100%;
   display: flex;
   flex-wrap: wrap;
-  border: solid black 2px;
+  /* border: solid black 2px; */
   font-size: 1.5rem;
 }
 

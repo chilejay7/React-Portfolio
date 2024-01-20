@@ -1,6 +1,6 @@
 function ContactPage() {
     return (
-        <h2>Contact Me</h2>
+        <h2 className="title">Contact Me</h2>
     )
 }
 
