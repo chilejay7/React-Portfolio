@@ -6,6 +6,7 @@ import SocialIcons from './UI/SocialIcons';
 // The array holds a list of urls that are passed to the SocialIcons component as a property.
 const urls = [
     'https://www.linkedin.com/in/cody-burkholder-4b072848/',
+    'mailto:codyburk7@gmail.com',
     'https://github.com/chilejay7',
 ]
 

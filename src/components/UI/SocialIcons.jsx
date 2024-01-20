@@ -11,7 +11,9 @@ function SocialIcons({ urls }) {
                 // Each list item needs a unique key. The address is used for this purpose.
                 return (
                     address.includes('github') ? (
-                        <SocialIcon bgColor="blue" key={address} url={address} />
+                        <SocialIcon bgColor="#0077b6" key={address} url={address} />
+                    ) : address.includes('mailto') ? (
+                        <SocialIcon bgColor="#d00000" key={address} url={address} />
                     ) : (
                         <SocialIcon key={address} url={address} />
                     )

@@ -1,3 +1,16 @@
+:root {
+  --color1: #4cc9f0;
+  --color2: #4895ef;
+  --color3: #4361ee;
+  --color4: #3f37c9;
+  --color5: #3a0ca3;
+  --color6: #480ca8;
+  --color7: #560bad;
+  --color8: #7209b7;
+  --color9: #b5179e;
+  --color0: #f72585;
+}
+
 #root {
   margin: 0 auto;
   padding: .5rem;
