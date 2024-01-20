@@ -12,7 +12,7 @@ import HomePage from './pages/HomePage.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
-import ProjectPage from './pages/ProjectPage.jsx';
+import Portfolio from './pages/Portfolio.jsx';
 import './index.css';
 
 const router = createBrowserRouter([
@@ -40,8 +40,8 @@ const router = createBrowserRouter([
       },
       {
         // The /projects route renders the ProjectPage.
-        path: 'projects',
-        element: <ProjectPage />,
+        path: 'portfolio',
+        element: <Portfolio />,
       },
     ],
   },
