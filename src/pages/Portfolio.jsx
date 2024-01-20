@@ -1,6 +1,9 @@
 function Portfolio() {
     return (
-        <h2 className="title">Current and Future Projects</h2>
+        <>
+        <h2 className="title">Portfolio</h2>
+        <hr></hr>
+        </>
     )
 }
 
