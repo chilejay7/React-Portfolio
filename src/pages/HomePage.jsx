@@ -4,7 +4,7 @@ function HomePage() {
 
     console.log(`You're Home!!!`);
     return (
-        <h1>Home</h1>
+        <h2 className="title">Home</h2>
     );
 }
 
