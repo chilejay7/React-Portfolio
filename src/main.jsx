@@ -25,14 +25,14 @@ const router = createBrowserRouter([
     // The child routes defined below are rendered through the Outlet component in App.jsx.
     children: [
       {
-        // Index true sets this as the default route and renders HomePage.jsx
-        path: 'home',
-        element: <HomePage />,
-      },
-      {
-        // The /about route renders the AboutPage.
+        // // Index true sets this as the default route, and the /about route renders the AboutPage.
         index: true,
         element: <AboutPage />,
+      },
+      {
+        // Renders HomePage.jsx
+        path: '/home',
+        element: <HomePage />,
       },
       {
         // The /contact route renders the ContactPage.
