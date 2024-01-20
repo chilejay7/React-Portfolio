@@ -1,6 +1,6 @@
 function ProjectPage() {
     return (
-        <h1>Current and Future Projects</h1>
+        <h2 className="title">Current and Future Projects</h2>
     )
 }
 

@@ -1,6 +1,6 @@
 function AboutPage() {
     return (
-        <h1>About Me</h1>
+        <h2 className="title">About Me</h2>
     )
 }
 
