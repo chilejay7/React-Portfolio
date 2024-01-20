@@ -50,6 +50,10 @@ header {
   color: white;
 }
 
+main {
+  height: 75vh;
+}
+
 /* .logo {
   height: 6em;
   padding: 1.5em;
