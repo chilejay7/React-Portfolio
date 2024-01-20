@@ -13,6 +13,7 @@ import ErrorPage from './pages/ErrorPage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
 import Portfolio from './pages/Portfolio.jsx';
+import Resume from './pages/Resume.jsx';
 import './index.css';
 
 const router = createBrowserRouter([
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
         path: 'portfolio',
         element: <Portfolio />,
       },
+      {
+        path: 'resume',
+        element: <Resume />,
+      }
     ],
   },
 ])
