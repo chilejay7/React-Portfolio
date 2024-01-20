@@ -1,8 +1,21 @@
-function SocialIcons() {
+import { SocialIcon } from 'react-social-icons';
 
-    return(
+function SocialIcons({ urls }) {
+
+    // console.log(`The urls prop is: ${urls}`);
+
+    return (
         <div className="social-icons">
-            <h4>Icons</h4>
+
+            {urls.map((address) => {
+                console.log(address);
+                // A return inside of the map function is needed to return the JSX elements.
+                // Each list item needs a unique key.  The address is used for this purpose.
+                return (
+                        <SocialIcon key={address} url={address} />
+                )
+            }
+            )}
         </div>
     );
 };
