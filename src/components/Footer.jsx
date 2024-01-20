@@ -14,7 +14,7 @@ function Footer() {
     return(
         <footer className="footer">
             <h4>&#xa9; Cody Burkholder</h4>
-            <p>Software Enginner 2024</p>
+            <p>Software Engineer 2024</p>
 
             <SocialIcons urls={urls} />
         </footer>
