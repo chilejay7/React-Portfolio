@@ -12,8 +12,9 @@ import HomePage from './pages/HomePage.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
-import Portfolio from './pages/Portfolio.jsx';
-import Resume from './pages/Resume.jsx';
+import Portfolio from './pages/PortfolioPage.jsx';
+import Resume from './pages/ResumePage.jsx';
+
 import './index.css';
 
 const router = createBrowserRouter([
@@ -45,6 +46,7 @@ const router = createBrowserRouter([
         element: <Portfolio />,
       },
       {
+        // The /resume route renders the ResumePage.
         path: 'resume',
         element: <Resume />,
       }
