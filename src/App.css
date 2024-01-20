@@ -1,9 +1,10 @@
 #root {
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   flex-basis: 100%;
   font-family: 'Lora', serif;
+  background-color: #242424;
   /* font-family: 'Merriweather', serif; */
 }
 
@@ -16,6 +17,7 @@ header {
   flex-wrap: wrap;
   text-align: center;
   font-weight: bold;
+  color: black;
   border-radius: .5em;
   background-image: url('./assets/headerbkgd.jpg');
   background-size: cover;
@@ -34,6 +36,7 @@ header {
   margin: 0 auto;
   color: black;
   font-weight: bold;
+  text-decoration: none;
 
   &:hover {
     color: white;
