@@ -4,8 +4,8 @@
   text-align: center;
   flex-basis: 100%;
   font-family: 'Lora', serif;
+    /* font-family: 'Merriweather', serif; */
   background-color: #242424;
-  /* font-family: 'Merriweather', serif; */
 }
 
 body {
@@ -17,6 +17,7 @@ header {
   flex-wrap: wrap;
   text-align: center;
   font-weight: bold;
+  font-size: 1.75rem;
   color: black;
   border-radius: .5em;
   background-image: url('./assets/headerbkgd.jpg');
