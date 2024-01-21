@@ -1,4 +1,5 @@
 import Apps from "../components/Apps";
+import './PortfolioPage.css';
 
 function Portfolio() {
     return (
