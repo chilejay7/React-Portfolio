@@ -5,3 +5,8 @@
     border-radius: .5em;
     padding: 10px;
 }
+
+#contact-form textarea {
+    width: 50%;
+    height: 100px;
+}
