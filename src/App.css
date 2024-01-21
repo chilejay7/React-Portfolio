@@ -21,6 +21,12 @@
   background-color: #242424;
 }
 
+h1, h2 {
+  margin: 20px;
+  font-weight: bold;
+
+}
+
 body {
   flex-basis: 100%;
   margin: 0;
