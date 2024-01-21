@@ -40,8 +40,8 @@ function ContactForm() {
             </div>
             
             <div class="form-group">
-                <label for="exampleFormControlTextarea1">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your message here..."></textarea>
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Enter your message here..."></textarea>
             </div>
             <div>
                 <button type="submit" class="btn btn-primary">Submit</button>
