@@ -31,11 +31,6 @@ const router = createBrowserRouter([
         element: <AboutPage />,
       },
       {
-        // Renders HomePage.jsx
-        path: '/home',
-        element: <HomePage />,
-      },
-      {
         // The /contact route renders the ContactPage.
         path: 'contact',
         element: <ContactPage />,
