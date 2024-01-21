@@ -32,7 +32,7 @@ function ContactForm() {
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name" placeholder="Name" />
             </div>
-            
+
             <div class="form-group">
                 <label for="email">Email address</label>
                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" />
@@ -41,7 +41,7 @@ function ContactForm() {
             
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter yor message here..."></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your message here..."></textarea>
             </div>
             <div>
                 <button type="submit" class="btn btn-primary">Submit</button>
