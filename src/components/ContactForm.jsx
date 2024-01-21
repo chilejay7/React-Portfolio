@@ -1,6 +1,7 @@
 function ContactForm() {
     return(
         <form id="contact-form">
+            
             <div className="form-label">
             <label>Name:</label>
             </div>

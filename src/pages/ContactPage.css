@@ -6,6 +6,10 @@
     padding: 10px;
 }
 
+#contact-form input {
+    width: 50%;
+}
+
 #contact-form textarea {
     width: 50%;
     height: 100px;
