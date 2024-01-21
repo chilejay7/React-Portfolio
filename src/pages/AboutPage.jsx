@@ -23,7 +23,7 @@ function AboutPage() {
                     boardgames and speak Spanish.
                 </p>
 
-                <img src="src\assets\family_photo.jpeg" alt="family picture"></img>
+                <img src="src/assets/family_photo.jpeg" alt="family picture"></img>
 
             </section>
         </>
