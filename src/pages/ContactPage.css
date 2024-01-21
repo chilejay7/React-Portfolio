@@ -6,11 +6,28 @@
     padding: 10px;
 }
 
+#contact-form label {
+    font-weight: bold;
+}
+
 #contact-form input {
     width: 50%;
+    box-shadow: 5px 5px 5px;
+    margin: 10px;
+    border-radius: .2em;
 }
 
 #contact-form textarea {
     width: 50%;
     height: 100px;
+    box-shadow: 5px 5px 5px;
+    margin: 10px;
+    border-radius: .2em;
+}
+
+#contact-form button {
+    font-weight: bold;
+    padding: 7px;
+    border-radius: .5em;
+    box-shadow: 5px 5px 5px;
 }

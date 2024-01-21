@@ -1,24 +1,30 @@
 function ContactForm() {
-    return(
+    return (
         <form id="contact-form">
-            
-            <div className="form-label">
-            <label>Name:</label>
-            </div>
+            <section id="form-input">
 
-            <input type="text" placeholder="Name: First and last" />
-            
-            <div className="form-label">
-            <label>Email:</label>
-            </div>
+                <div className="form-label">
+                    <label>Name:</label>
+                </div>
 
-            <input type="email" placeholder="email address" />
+                <input type="text" placeholder="Name: First and last" />
 
-            <div className="form-label">
-            <label>Message:</label>
-            </div>
+                <div className="form-label">
+                    <label>Email:</label>
+                </div>
 
-            <textarea placeholder="Enter your message here..." />
+                <input type="email" placeholder="Email address" />
+
+                <div className="form-label">
+                    <label>Message:</label>
+                </div>
+
+                <textarea placeholder="Enter your message here..." />
+
+                <div>
+                    <button>Submit Contact Info</button>
+                </div>
+            </section>
         </form>
     )
 }
