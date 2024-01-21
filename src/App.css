@@ -21,8 +21,10 @@
   background-color: #242424;
 }
 
-h2 {
-  margin-top: 20px;
+h1, h2 {
+  margin: 20px;
+  font-weight: bold;
+
 }
 
 body {
