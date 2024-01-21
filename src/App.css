@@ -40,7 +40,7 @@ header {
   font-size: 1.75rem;
   color: black;
   border-radius: .5em;
-  background-image: url('./assets/headerbkgd.jpg');
+  background-image: url('/assets/headerbkgd.jpg');
   background-size: cover;
   padding: 20px;
 }
