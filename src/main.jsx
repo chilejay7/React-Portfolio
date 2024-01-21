@@ -8,7 +8,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 // Imports pages needed to properly route requests.
 import App from './App.jsx';
-import HomePage from './pages/HomePage.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
@@ -29,11 +28,6 @@ const router = createBrowserRouter([
         // // Index true sets this as the default route, and the /about route renders the AboutPage.
         index: true,
         element: <AboutPage />,
-      },
-      {
-        // Renders HomePage.jsx
-        path: '/home',
-        element: <HomePage />,
       },
       {
         // The /contact route renders the ContactPage.
