@@ -31,3 +31,19 @@
     border-radius: .5em;
     box-shadow: 5px 5px 5px;
 }
+
+/* Used to test Bootstrap */
+.form {
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+    text-align: left;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+    margin-top: 10px;
+}
+    
