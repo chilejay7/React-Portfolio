@@ -1,6 +1,8 @@
-.footer {
+.footer,
+.footer h4 {
     color: white;
     text-align: center;
+    font-size: .9rem;
 }
 
 .social-icons {
