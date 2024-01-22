@@ -26,16 +26,28 @@ function ContactForm() {
             console.log(`The updated data in state is: ${Object.entries(currData).forEach(([key, value]) => console.log(key, value))}`)
 
             // Using the spread operator is best practice in React when updating state based on previous value.
-            return{...currData};
+            // This returns a copy of our current object with the current data.
+            return{
+                ...currData,
+                [changedField]: newValue,
+            };
         } )
     };
+
+    const handleSubmit = (event) => {
+        console.log('The contact information has beeen submitted.');
+
+        // This prevents the page from reloading and uses setFormData to reset the information in state and clear the form.
+        event.preventDefault();
+        setFormData({ fullName: "", email: "", message:"" });
+    }
 
     return (
 
         // The netlify attribute has been added to use netlify's built-in form detection and handling.
         // The documentation can be found at https://docs.netlify.com/forms/setup/
         // Form submissions should be received in the netlify dashboard.
-        <form name="contact-form" action="#" className="form" netlify netlify-honeypot>
+        <form name="contact-form" action="#" className="form" netlify onSubmit={handleSubmit}>
             <input type="hidden" name="contact-form" value="contact" />
             <div className="form-group">
                 <label htmlFor="fullName">Name</label>
