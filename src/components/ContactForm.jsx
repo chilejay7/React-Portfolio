@@ -36,6 +36,7 @@ function ContactForm() {
         // The documentation can be found at https://docs.netlify.com/forms/setup/
         // Form submissions should be received in the netlify dashboard.
         <form name="contact-form" action="#" className="form" netlify netlify-honeypot>
+            <input type="hidden" name="contact-form" value="contact" />
             <div className="form-group">
                 <label htmlFor="fullName">Name</label>
                 <input type="text" className="form-control" id="fullName" placeholder="Name" name="fullName" value={ formData.fullName } onChange={ handleChange }/>
