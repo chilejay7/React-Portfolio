@@ -26,7 +26,7 @@ function ContactForm() {
             console.log(`The updated data in state is: ${Object.entries(currData).forEach(([key, value]) => console.log(key, value))}`)
 
             // Using the spread operator is best practice in React when updating state based on previous value.
-            // This returns a copy of our current object with the current data.
+            // This returns a copy of our current object using spread with the current data.
             return{
                 ...currData,
                 [changedField]: newValue,
