@@ -32,7 +32,10 @@ function ContactForm() {
 
     return (
 
-        <form className="form">
+        // The netlify attribute has been added to use netlify's built-in form detection and handling.
+        // The documentation can be found at https://docs.netlify.com/forms/setup/
+        // Form submissions should be received in the netlify dashboard.
+        <form name="contact-form" action="#" className="form" netlify netlify-honeypot>
             <div className="form-group">
                 <label htmlFor="fullName">Name</label>
                 <input type="text" className="form-control" id="fullName" placeholder="Name" name="fullName" value={ formData.fullName } onChange={ handleChange }/>
@@ -49,7 +52,7 @@ function ContactForm() {
                 <textarea className="form-control" id="message" rows="3" placeholder="Enter your message here..." name="message" value={ formData.message } onChange={ handleChange }></textarea>
             </div>
             <div>
-                <button type="submit" className="btn btn-primary" onClick={ handleChange }>Submit</button>
+                <button type="submit" className="btn btn-primary">Submit</button>
             </div>
         </form>
     )
