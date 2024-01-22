@@ -43,7 +43,9 @@
 .form label,
 .form input,
 .form textarea,
-.form button {
+.form button,
+hr {
     margin-top: 10px;
+    color: white;
 }
     

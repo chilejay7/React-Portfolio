@@ -23,6 +23,9 @@ function ContactForm() {
             // Bracket notation is used here to allow the use of a variable to access the object's property and set the new value of the entry.
             console.log(`This is the current data changed field: ${currData[changedField]}`);
             currData[changedField] = newValue;
+            console.log(`The updated data in state is: ${Object.entries(currData).forEach(([key, value]) => console.log(key, value))}`)
+
+            // Using the spread operator is best practice in React when updating state based on previous value.
             return{...currData};
         } )
     };
