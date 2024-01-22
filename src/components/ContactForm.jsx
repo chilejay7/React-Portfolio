@@ -47,7 +47,7 @@ function ContactForm() {
         // The netlify attribute has been added to use netlify's built-in form detection and handling.
         // The documentation can be found at https://docs.netlify.com/forms/setup/
         // Form submissions should be received in the netlify dashboard.
-        <form name="contact-form" className="form" onSubmit={handleSubmit}>
+        <form name="contact-form" className="form" onSubmit={handleSubmit} method="post">
             <input type="hidden" name="form-name" value="contact-form" />
             <div className="form-group">
                 <label htmlFor="fullName">Name</label>
