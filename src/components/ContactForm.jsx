@@ -32,7 +32,9 @@ function ContactForm() {
 
     return (
 
-        <form className="form">
+        // The netlify attribute has been added to use netlify's built-in form detection and handling.
+        // The documentation can be found at https://app.netlify.com/sites/cburkreactportfolio/forms
+        <form className="form" netlify>
             <div className="form-group">
                 <label htmlFor="fullName">Name</label>
                 <input type="text" className="form-control" id="fullName" placeholder="Name" name="fullName" value={ formData.fullName } onChange={ handleChange }/>
