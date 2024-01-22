@@ -1,8 +1,11 @@
 import { useState } from "react";
+import { useForm } from "react-hook-form";
 
 function ContactForm() {
     // The useState hook is set to an object with the values for each of the input variables set to empty strings.
     const [formData, setFormData] = useState({ fullName: "", email: "", message:"" });
+    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+
 
     // The handleChange function is set to accept an event argument and will handle the onChange events of the input fields.
     // Each time the input field is changed it will trigger the function to update the value in state.
@@ -34,12 +37,23 @@ function ContactForm() {
         } )
     };
 
-    const handleSubmit = (event) => {
-        console.log('The contact information has beeen submitted.');
+    // const handleSubmit = (event) => {
+    //     console.log('The contact information has beeen submitted.');
 
-        // This prevents the page from reloading and uses setFormData to reset the information in state and clear the form.
-        event.preventDefault();
-        setFormData({ fullName: "", email: "", message:"" });
+    //     // This prevents the page from reloading and uses setFormData to reset the information in state and clear the form.
+    //     event.preventDefault();
+    //     setFormData({ fullName: "", email: "", message:"" });
+    // }
+
+    const handleForm = (data) => {
+        console.log('Thank you for contacting me.  Your form has been submitted.' );
+        console.log(data);
+    }
+
+    const formOptions = {
+        fullName: { required: "Please enter your name. This field cannot be blank." },
+        email: { required: "The email field cannot be blank." },
+        message: { required: "Please enter your message or questions for the developer.  This field cannot be blank." }
     }
 
     return (
@@ -47,22 +61,34 @@ function ContactForm() {
         // The netlify attribute has been added to use netlify's built-in form detection and handling.
         // The documentation can be found at https://docs.netlify.com/forms/setup/
         // Form submissions should be received in the netlify dashboard.
-        <form name="contact-form" className="form" onSubmit={handleSubmit} method="post">
+        // <form name="contact-form" className="form" onSubmit={handleSubmit} method="post">
+        <form name="contact-form" className="form" onSubmit={handleSubmit(handleForm)} method="post">
             <input type="hidden" name="form-name" value="contact-form" />
             <div className="form-group">
                 <label htmlFor="fullName">Name</label>
-                <input type="text" className="form-control" id="fullName" placeholder="Name" name="fullName" value={ formData.fullName } onChange={ handleChange }/>
+                {/* <input type="text" className="form-control" id="fullName" placeholder="Name" name="fullName" value={ formData.fullName } onChange={ handleChange }/> */}
+                <input type="text" className="form-control" id="fullName" placeholder="Name" name="fullName" {...register("fullName", formOptions.fullName)} />
+                <small className="text-danger">
+                    { errors?.fullName && errors.fullName.message }
+                </small>
             </div>
 
             <div className="form-group">
                 <label htmlFor="email">Email address</label>
-                <input type="email" className="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" name="email" value={ formData.email } onChange={ handleChange } />
-               
+                {/* <input type="email" className="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" name="email" value={ formData.email } onChange={ handleChange } /> */}
+                <input type="email" className="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" name="email" {...register("email", formOptions.email)}  />
+                <small className="text-danger">
+                    { errors?.email && errors.email.message }
+                </small>
             </div>
             
             <div className="form-group">
                 <label htmlFor="message">Message</label>
-                <textarea className="form-control" id="message" rows="3" placeholder="Enter your message here..." name="message" value={ formData.message } onChange={ handleChange }></textarea>
+                {/* <textarea className="form-control" id="message" rows="3" placeholder="Enter your message here..." name="message" value={ formData.message } onChange={ handleChange }></textarea> */}
+                <textarea className="form-control" id="message" rows="3" placeholder="Enter your message here..." name="message" {...register("message", formOptions.message)} ></textarea>
+                <small className="text-danger">
+                    { errors?.message && errors.message.message }
+                </small>
             </div>
             <div>
                 <button type="submit" className="btn btn-primary">Submit</button>
