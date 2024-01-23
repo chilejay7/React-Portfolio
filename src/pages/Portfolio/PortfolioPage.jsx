@@ -1,4 +1,4 @@
-import Apps from "../components/Apps";
+import Apps from "../../components/Apps";
 import './PortfolioPage.css';
 
 const projects = [

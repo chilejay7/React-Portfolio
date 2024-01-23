@@ -55,13 +55,13 @@ function ContactForm() {
         console.log('Thank you for contacting me.  Your form has been submitted.' );
         console.log(data);
 
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "contact-form": "contact", ...data })
-          })
-            .then(() => alert("Success!"))
-            .catch(error => alert(error));
+        // fetch("/", {
+        //     method: "POST",
+        //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        //     body: encode({ "contact-form": "contact", ...data })
+        //   })
+        //     .then(() => alert("Success!"))
+        //     .catch(error => alert(error));
     
         reset();
     }
@@ -74,13 +74,14 @@ function ContactForm() {
 
     return (
 
-        // The netlify attribute has been added to use netlify's built-in form detection and handling.
+        // The netlify hidden input element has been added to use netlify's built-in form detection and handling.
         // The documentation can be found at https://docs.netlify.com/forms/setup/
         // Form submissions should be received in the netlify dashboard.
         // <form name="contact-form" className="form" onSubmit={handleSubmit} method="post">
-        <form name="contact-form" className="form" onSubmit={handleSubmit(handleForm)} method="POST">
+        <form name="contact-form" className="form" onSubmit={handleSubmit(handleForm)} >
 
             <input type="hidden" name="form-name" value="contact" />
+
             <div className="form-group">
                 <label htmlFor="fullName">Name</label>
                 {/* <input type="text" className="form-control" id="fullName" placeholder="Name" name="fullName" value={ formData.fullName } onChange={ handleChange }/> */}

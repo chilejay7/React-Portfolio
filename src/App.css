@@ -9,6 +9,8 @@
   --color8: #7209b7;
   --color9: #b5179e;
   --color0: #f72585;
+
+  font-family: 'Lora', serif;
 }
 
 #root {
@@ -16,7 +18,7 @@
   padding: .5rem;
   text-align: center;
   flex-basis: 100%;
-  font-family: 'Lora', serif;
+
     /* font-family: 'Merriweather', serif; */
   background-color: #242424;
 }

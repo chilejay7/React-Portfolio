@@ -9,10 +9,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // Imports pages needed to properly route requests.
 import App from './App.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
-import AboutPage from './pages/AboutPage.jsx';
-import ContactPage from './pages/ContactPage.jsx';
-import Portfolio from './pages/PortfolioPage.jsx';
-import Resume from './pages/ResumePage.jsx';
+import AboutPage from './pages/About/AboutPage.jsx';
+import ContactPage from './pages/Contact/ContactPage.jsx';
+import Portfolio from './pages/Portfolio/PortfolioPage.jsx';
+import Resume from './pages/Resume/ResumePage.jsx';
 
 import './index.css';
 
