@@ -1,5 +1,18 @@
 .apps {
+    display: flex;
     color: white;
     font-size: 2rem;
     margin-top: 5%;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.card {
+    width: 300px;
+    margin: 5px;
+    font-size: 1rem;
 }
