@@ -14,6 +14,12 @@ const projects = [
         image: "/assets/always_sunny.png",
         url: "https://chilejay7.github.io/Its-Always-Sunny-in-Weather-App/",
     },
+    {
+        title: "TV Show Search",
+        description: "This application was built using the TVMaze API. Documentation can be found by visiting the site at: https://tvmaze.com/api.",
+        image: "/assets/TVShowSearch.png",
+        url: "https://chilejay7.github.io/TV-Show-Search/",
+    },
 ]
 
 function Portfolio() {
