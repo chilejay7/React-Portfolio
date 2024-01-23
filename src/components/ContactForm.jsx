@@ -48,6 +48,15 @@ function ContactForm() {
     const handleForm = (data) => {
         console.log('Thank you for contacting me.  Your form has been submitted.' );
         console.log(data);
+
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "contact-form": "contact", ...data })
+          })
+            .then(() => alert("Success!"))
+            .catch(error => alert(error));
+    
         reset();
     }
 
@@ -64,7 +73,7 @@ function ContactForm() {
         // Form submissions should be received in the netlify dashboard.
         // <form name="contact-form" className="form" onSubmit={handleSubmit} method="post">
         <form name="contact-form" className="form" onSubmit={handleSubmit(handleForm)} method="POST">
-            
+
             <input type="hidden" name="form-name" value="contact" />
             <div className="form-group">
                 <label htmlFor="fullName">Name</label>
