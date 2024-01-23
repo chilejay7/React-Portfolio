@@ -1,5 +1,27 @@
-.apps {
+.project-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     color: white;
-    font-size: 2rem;
-    margin-top: 5%;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.card {
+    width: 350px;
+    margin: 2%;
+    font-size: 1rem;
+    transition: 0.5s;
+
+    & h5 {
+        font-weight: bold;
+    }
+
+    &:hover {
+        transform: translate(0, -10px);
+    }
+
+    & img {
+        height: 275px;
+    }
 }
