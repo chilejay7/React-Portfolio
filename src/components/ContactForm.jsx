@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 function ContactForm() {
     // The useState hook is set to an object with the values for each of the input variables set to empty strings.
     const [formData, setFormData] = useState({ fullName: "", email: "", message:"" });
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, watch, reset, formState: { errors } } = useForm({ fullName: "", email: "", message:"" });
 
 
     // The handleChange function is set to accept an event argument and will handle the onChange events of the input fields.
@@ -48,6 +48,7 @@ function ContactForm() {
     const handleForm = (data) => {
         console.log('Thank you for contacting me.  Your form has been submitted.' );
         console.log(data);
+        reset();
     }
 
     const formOptions = {
@@ -63,7 +64,7 @@ function ContactForm() {
         // Form submissions should be received in the netlify dashboard.
         // <form name="contact-form" className="form" onSubmit={handleSubmit} method="post">
         <form name="contact-form" className="form" onSubmit={handleSubmit(handleForm)} method="post">
-            <input type="hidden" name="form-name" value="contact-form" />
+            <input type="hidden" name="form-name" value="contact" />
             <div className="form-group">
                 <label htmlFor="fullName">Name</label>
                 {/* <input type="text" className="form-control" id="fullName" placeholder="Name" name="fullName" value={ formData.fullName } onChange={ handleChange }/> */}
