@@ -22,9 +22,9 @@ function Portfolio() {
         <h2 className="title">Portfolio</h2>
         <hr></hr>
 
-        <section className="apps">
+        <section className="project-cards">
 
-        <Apps projects={ projects } />
+            <Apps projects={ projects } />
 
         </section>
 

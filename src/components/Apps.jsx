@@ -6,8 +6,7 @@ function Apps({ projects }) {
     // };
 
     return (
-        <section className="project-cards">
-            {projects.map((p) => {
+            projects.map((p) => {
                 return (
                 <div key={p.url} className="card">
                     <img src={p.image} className="card-img-top" alt="..." />
@@ -18,8 +17,8 @@ function Apps({ projects }) {
                     </div>
                 </div>
                 )
-            })}
-        </section>
+            })
+        
     );
 };
 
