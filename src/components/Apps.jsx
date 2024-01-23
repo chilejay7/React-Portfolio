@@ -1,10 +1,6 @@
 function Apps({ projects }) {
     console.log(projects);
 
-    // const styles = {
-    //     width: "30%",
-    // };
-
     return (
             projects.map((p) => {
                 return (

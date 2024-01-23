@@ -20,6 +20,24 @@ const projects = [
         image: "/assets/TVShowSearch.png",
         url: "https://chilejay7.github.io/TV-Show-Search/",
     },
+    {
+        title: "E-Commerce Application",
+        description: "The E-Commerce application helps end users manage products and their associated tags and categories. This is done through a database connection that leverages the Sequelize package.",
+        image: "/assets/E-Commerce.gif",
+        url: "https://drive.google.com/file/d/1RK48o8reBAdbbtTA0LLLIkgNup_oXJcA/view",
+    },
+    {
+        title: "Portfolio (HTML/CSS only)",
+        description: "This is the original portfolio created using only CSS and HTML.",
+        image: "/assets/UpdatedPortfolio.png",
+        url: "https://chilejay7.github.io/Professional-Portfolio/",
+    },
+    {
+        title: "Friendify (Social Network API - NoSQL)",
+        description: "The Friendify social networking application allows end users to share their thoughts, react to another person's thoughts, and also maintain a list of friends from the application's registered users. This is achieved through a database connection that leverages the mongoose package.",
+        image: "/assets/Friendify.gif",
+        url: "https://drive.google.com/file/d/1cLFRmF_TB6ei2AEgiNFzbxYYty4w9wO2/view",
+    },
 ]
 
 function Portfolio() {
