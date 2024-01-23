@@ -45,6 +45,12 @@ function ContactForm() {
     //     setFormData({ fullName: "", email: "", message:"" });
     // }
 
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+      }
+
     const handleForm = (data) => {
         console.log('Thank you for contacting me.  Your form has been submitted.' );
         console.log(data);
