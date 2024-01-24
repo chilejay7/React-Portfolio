@@ -5,17 +5,21 @@ import './App.css'
 
 import Header from './components/Header';
 import Footer from './components/Footer';
+import HeaderSidebar from './components/HeaderSidebar';
 
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
 
       <main>
+      <HeaderSidebar />
         <Outlet />
       </main>
 
       <Footer />
+
+      
     </>
   )
 }
