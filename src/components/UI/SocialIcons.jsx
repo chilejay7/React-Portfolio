@@ -15,7 +15,7 @@ function SocialIcons({ urls }) {
                     ) : address.includes('mailto') ? (
                         <SocialIcon bgColor="#d00000" key={address} url={address} />
                     ) : (
-                        <SocialIcon key={address} url={address} />
+                        <SocialIcon key={address} url={address} title={address}/>
                     )
                 );
             })}
