@@ -15,7 +15,7 @@ function HeaderSidebar() {
             <hr></hr>
             <ul className="nav nav-pills flex-column mb-auto">
                 <li className="nav-item">
-                    <a href="/" className="nav-link active" aria-current="page">
+                    <a href="/" className="nav-link text-white">
                         <svg className="bi me-2" width="16" height="16"><use xlinkHref="#bootsrap"></use></svg>
                         About
                     </a>
