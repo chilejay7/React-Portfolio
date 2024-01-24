@@ -1,3 +1,5 @@
+import './HeaderSidebar.css'
+
 function HeaderSidebar() {
     const styles = {
         width: "280px",
@@ -5,9 +7,9 @@ function HeaderSidebar() {
     }
 
     return (
-        <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style={styles}>
+        <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark sidebar-header" style={styles}>
             <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                <svg className="bi me-2" width="40" height="32"><use xlinkHref="#bootstrap"></use></svg>
+            <img src="/assets/family_photo.jpeg" alt="" width="32" height="32" className="rounded-circle me-2" />
                 <span className="fs-4">Cody Burkholder</span>
             </a>
             <hr></hr>
@@ -25,13 +27,13 @@ function HeaderSidebar() {
                     </a>
                 </li>
                 <li>
-                    <a href="#" className="nav-link text-white">
+                    <a href="/portfolio" className="nav-link text-white">
                         <svg className="bi me-2" width="16" height="16"><use xlinkHref="#table"></use></svg>
                        Portfolio
                     </a>
                 </li>
                 <li>
-                    <a href="#" className="nav-link text-white">
+                    <a href="/resume" className="nav-link text-white">
                         <svg className="bi me-2" width="16" height="16"><use xlinkHref="#grid"></use></svg>
                         Resume
                     </a>

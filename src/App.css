@@ -5,7 +5,10 @@
   flex-basis: 100%;
 
     /* font-family: 'Merriweather', serif; */
-  background-color: #242424;
+  /* background-color: #242424; */
+  background-image: url('/assets/unsplash.jpg');
+  background-size: cover;
+  background: opacity 0.5;
 }
 
 .title {
@@ -13,7 +16,11 @@
 }
 
 main {
-  min-height: 85vh;
+  min-height: 100vh;
+}
+
+.content-section {
+  width: 100%;
 }
 
 /* .logo {

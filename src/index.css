@@ -13,8 +13,10 @@
   font-family: 'Lora', serif;
 }
 
-main {
+.main {
   display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
 }
 
 hr {
@@ -25,6 +27,7 @@ hr {
 h1, h2 {
   margin: 20px;
   font-weight: bold;
+  
 }
 
 body {

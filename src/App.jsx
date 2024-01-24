@@ -12,14 +12,18 @@ function App() {
     <>
       {/* <Header /> */}
 
-      <main>
-      <HeaderSidebar />
-        <Outlet />
+      <main className='main'>
+        <HeaderSidebar />
+
+        <section className='content-section'>
+          <Outlet />
+          <Footer />
+
+        </section>
       </main>
 
-      <Footer />
-
       
+
     </>
   )
 }
