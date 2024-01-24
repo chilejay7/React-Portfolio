@@ -24,7 +24,7 @@ const projects = [
         github: "https://chilejay7.github.io/TV-Show-Search/",
     },
     {
-        title: "E-Commerce Application",
+        title: "E-Commerce Application (ORM)",
         description: "The E-Commerce application helps end users manage products and their associated tags and categories. This is done through a database connection that leverages the Sequelize package.",
         image: "/assets/E-Commerce.gif",
         url: "https://drive.google.com/file/d/1RK48o8reBAdbbtTA0LLLIkgNup_oXJcA/view",
