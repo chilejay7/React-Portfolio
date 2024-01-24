@@ -78,7 +78,7 @@ function ContactForm() {
         // The documentation can be found at https://docs.netlify.com/forms/setup/
         // Form submissions should be received in the netlify dashboard.
         // <form name="contact" className="form" onSubmit={handleSubmit} method="post">
-        <form name="contact" action="/contact" className="form" method="POST" onSubmit={handleSubmit(handleForm)} >
+        <form name="contact" action="/contact" className="form" method="POST"  >
 
             <input type="hidden" name="form-name" value="contact" />
 
