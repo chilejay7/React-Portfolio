@@ -1,29 +1,61 @@
 import { Link } from "react-router-dom";
 import NavBar from "./UI/NavBar";
 import { FileEarmarkRuled, House, PersonRolodex, Envelope } from "react-bootstrap-icons";
+import { useState } from "react";
 import './NavMenu.css'
+
 
 // The link elements are defined in the return.
 // All link elements are passed as properties to NavBar.jsx.
 // Addtional svg element placeholders are included with each navigation link element.
+// This function is being exported to HeaderSidebar.jsx
 function NavMenu() {
+
+    // State is used to evaluate the classNames of the elements being clicked to set the active tab.
+    const [ activeClass, setActiveClass ] = useState("nav-link text-white");
+
+    const links = document.querySelectorAll(".nav-link");
+    console.dir(links);
+
+    // This function is used to clear the active className from any links.
+    // The function is called in the clickHandler
+    const resetClass = () => {
+        links.forEach(link => {
+            if (link.className === "nav-link text-white active") {
+                link.className = "nav-link text-white"
+            }
+        })
+    }
+
+    // This click handler was built to leverage Bootstrap's built-in active class to highlight the active tab in the navigation menu.
+    // The resetClass function is called first to reset all link classes to the base.
+    // After resetting all links to the base class the event target's class is evaluated to add the active className.
+    const clickHandler = async (e) => {
+        resetClass();
+       
+            e.target.className === "nav-link text-white" ?  e.target.className += " active"
+            : e.target.className = "nav-link text-white"      
+
+        console.log(e.target.className);
+    }
+
     return (
         <NavBar links={[
 
             <Link key={2} to="/portfolio"
-                className="nav-link text-white">
+                className="nav-link text-white" data-toggle="pill" onClick={clickHandler}>
                 {/* <svg className="bi me-2" width="16" height="16"><use xlinkHref="#bootsrap"></use></svg> */}
                 <PersonRolodex className="bootstrap-icons" />
                 Portfolio
             </Link>,
 
-            <Link key={3} to="/contact" className="nav-link text-white">
+            <Link key={3} to="/contact" className="nav-link text-white" aria-current="page" data-toggle="pill" onClick={clickHandler}>
                 {/* <svg className="bi me-2" width="16" height="16"><use xlinkHref="#bootsrap"></use></svg> */}
                 <Envelope className="bootstrap-icons" />
                 Contact
             </Link>,
 
-            <Link key={4} to="/" className="nav-link text-white">
+            <Link key={4} to="/" className="nav-link text-white" data-toggle="pill" onClick={clickHandler}>
                 {/* <svg className="bi me-2" width="16" height="16" fill="currentColor">
                     <use xlinkHref="bootstrap-icons.svg#house" />
                 </svg> */}
@@ -31,7 +63,7 @@ function NavMenu() {
                 About
             </Link>,
 
-            <Link key={5} to="/resume" className="nav-link text-white">
+            <Link key={5} to="/resume" className="nav-link text-white" data-toggle="pill" onClick={clickHandler}>
                 {/* <svg className="bi me-2" width="16" height="16"><use xlinkHref="#bootsrap"></use></svg> */}
                 <FileEarmarkRuled className="bootstrap-icons"/>
                 Resume
