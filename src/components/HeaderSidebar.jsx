@@ -1,9 +1,10 @@
+import NavMenu from './NavMenu';
+
 import './HeaderSidebar.css'
 
 function HeaderSidebar() {
     const styles = {
         width: "280px",
-        // height: "vh",
     }
 
     return (
@@ -13,32 +14,8 @@ function HeaderSidebar() {
                 <span className="fs-4">Cody Burkholder</span>
             </a>
             <hr></hr>
-            <ul className="nav nav-pills flex-column mb-auto">
-                <li className="nav-item">
-                    <a href="/" className="nav-link text-white">
-                        <svg className="bi me-2" width="16" height="16"><use xlinkHref="#bootsrap"></use></svg>
-                        About
-                    </a>
-                </li>
-                <li>
-                    <a href="/contact" className="nav-link text-white">
-                        <svg className="bi me-2" width="16" height="16"><use xlinkHref="/contact"></use></svg>
-                        Contact
-                    </a>
-                </li>
-                <li>
-                    <a href="/portfolio" className="nav-link text-white">
-                        <svg className="bi me-2" width="16" height="16"><use xlinkHref="#table"></use></svg>
-                       Portfolio
-                    </a>
-                </li>
-                <li>
-                    <a href="/resume" className="nav-link text-white">
-                        <svg className="bi me-2" width="16" height="16"><use xlinkHref="#grid"></use></svg>
-                        Resume
-                    </a>
-                </li>
-            </ul>
+            
+            <NavMenu />
 
             <hr></hr>
 
