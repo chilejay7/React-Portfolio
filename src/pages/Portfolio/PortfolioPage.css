@@ -17,11 +17,19 @@
         font-weight: bold;
     }
 
-    &:hover {
-        transform: translate(0, -10px);
-    }
-
     & img {
         height: 275px;
+        padding: 10px;
+        box-shadow: 9px 9px 9px;
+    }
+
+    & .social-container {
+        width: 300px;
+    }
+
+    & .social-svg {
+        &:hover {
+        transform: translate(0, -1px);
+        }
     }
 }
