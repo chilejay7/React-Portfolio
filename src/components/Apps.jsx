@@ -13,7 +13,7 @@ function Apps({ projects }) {
                         <p className="card-text">{p.description}</p>
                         <a href={p.url} className="btn btn-primary">Deployed App: {p.title}</a>
                     </div>
-                    <SocialIcon url={p.url} />
+                    <SocialIcon url={p.github} />
                 </div>
                 )
             })
