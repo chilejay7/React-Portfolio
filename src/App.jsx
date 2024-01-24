@@ -17,10 +17,11 @@ function App() {
 
         <section className='content-section'>
           <Outlet />
-          <Footer />
 
         </section>
       </main>
+
+      <Footer />
 
       
 
