@@ -5,25 +5,30 @@ import { useState } from "react";
 import './NavMenu.css'
 
 
+   
+
 // The link elements are defined in the return.
 // All link elements are passed as properties to NavBar.jsx.
 // Addtional svg element placeholders are included with each navigation link element.
 // This function is being exported to HeaderSidebar.jsx
 function NavMenu() {
 
+    let links = document.querySelectorAll(".nav-link");
+    console.dir(links);
+
     // State is used to evaluate the classNames of the elements being clicked to set the active tab.
     const [ activeClass, setActiveClass ] = useState("nav-link text-white");
-
-    const links = document.querySelectorAll(".nav-link");
-    console.dir(links);
 
     // This function is used to clear the active className from any links.
     // The function is called in the clickHandler
     const resetClass = () => {
+        links = document.querySelectorAll(".nav-link");
+        console.dir(links);
         links.forEach(link => {
             if (link.className === "nav-link text-white active") {
                 link.className = "nav-link text-white"
             }
+            console.log('Classes reset')
         })
     }
 
