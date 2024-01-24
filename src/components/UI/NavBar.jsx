@@ -1,10 +1,15 @@
 function NavBar({ links }) {
     return (
-        <nav className="nav">
-            <ul className="navList">
-                {links.map((link) => link)}
-            </ul>
-        </nav>
+
+        <ul className="nav nav-pills nav-justified">
+
+            {links.map((link) =>
+                <li className="nav-item">
+                    {link}
+                </li>
+            )}
+
+        </ul>
     )
 }
 

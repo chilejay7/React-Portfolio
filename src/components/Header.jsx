@@ -1,4 +1,5 @@
 import NavMenu from "./NavMenu";
+import './Header.css'
 
 function Header(){
     return(
