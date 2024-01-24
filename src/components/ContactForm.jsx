@@ -100,7 +100,7 @@ function ContactForm() {
                 </small>
             </div>
             <div>
-                <button type="submit" className="btn btn-primary" onSubmit={handleSubmit(handleForm)}>Submit</button>
+                <button type="submit" className="btn btn-primary" >Submit</button>
             </div>
         </form>
     )
