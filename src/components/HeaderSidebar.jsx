@@ -19,7 +19,7 @@ function HeaderSidebar() {
 
             <hr></hr>
 
-            {/* <div className="dropdown">
+            <div className="dropdown">
                 <a href="#" className="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="/assets/family_photo.jpeg" alt="" width="32" height="32" className="rounded-circle me-2" />
                         <strong>Cody</strong>
@@ -31,7 +31,7 @@ function HeaderSidebar() {
                     <li><hr className="dropdown-divider"></hr></li>
                     <li><a className="dropdown-item" href="#">Sign out</a></li>
                 </ul>
-            </div> */}
+            </div>
         </div>
     )
 }

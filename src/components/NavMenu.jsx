@@ -30,10 +30,10 @@ function NavMenu() {
     // This click handler was built to leverage Bootstrap's built-in active class to highlight the active tab in the navigation menu.
     // The resetClass function is called first to reset all link classes to the base.
     // After resetting all links to the base class the event target's class is evaluated to add the active className.
-    const clickHandler = async (e) => {
+    const clickHandler = (e) => {
         resetClass();
        
-            e.target.className === "nav-link text-white" ?  e.target.className += " active"
+            e.target.className === "nav-link text-white" ? e.target.className += " active"
             : e.target.className = "nav-link text-white"      
 
         console.log(e.target.className);
