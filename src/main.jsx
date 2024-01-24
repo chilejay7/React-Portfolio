@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 // Imports bootstrap for added styling options.
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 // Imports pages needed to properly route requests.
 import App from './App.jsx';
