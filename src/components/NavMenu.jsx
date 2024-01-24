@@ -2,10 +2,6 @@ import { Link } from "react-router-dom";
 import NavBar from "./UI/NavBar";
 import { FileEarmarkRuled, House, PersonRolodex, Envelope } from "react-bootstrap-icons";
 import { useState } from "react";
-import './NavMenu.css'
-
-
-   
 
 // The link elements are defined in the return.
 // All link elements are passed as properties to NavBar.jsx.
@@ -16,10 +12,8 @@ function NavMenu() {
     let links = document.querySelectorAll(".nav-link");
     console.dir(links);
 
-    // State is used to evaluate the classNames of the elements being clicked to set the active tab.
-    const [ activeClass, setActiveClass ] = useState("nav-link text-white");
-
     // This function is used to clear the active className from any links.
+    // The links variable is redefined when the function first runs becuse when the application first loads, the querySelectorAll statement returns an empty node list.
     // The function is called in the clickHandler
     const resetClass = () => {
         links = document.querySelectorAll(".nav-link");
