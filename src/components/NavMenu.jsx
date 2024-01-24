@@ -7,6 +7,7 @@ import NavBar from "./UI/NavBar";
 function NavMenu() {
     return (
         <NavBar links={[
+
             <Link key={2} to="/portfolio"
                 className="nav-link text-white">
                 <svg className="bi me-2" width="16" height="16"><use xlinkHref="#bootsrap"></use></svg>
@@ -19,14 +20,14 @@ function NavMenu() {
             </Link>,
 
             <Link key={4} to="/" className="nav-link text-white">
-                <svg className="bi me-2" width="16" height="16"><use xlinkHref="#bootsrap"></use></svg>
+                <svg className="bi me-2" width="16" height="16"><use xlinkHref="#home"></use></svg>
                 About
             </Link>,
 
             <Link key={5} to="/resume" className="nav-link text-white">
                 <svg className="bi me-2" width="16" height="16"><use xlinkHref="#bootsrap"></use></svg>
                 Resume
-            </Link>,
+            </Link>
         ]}
         />
     );

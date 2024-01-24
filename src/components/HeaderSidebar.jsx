@@ -28,7 +28,7 @@ function HeaderSidebar() {
                     <li><a className="dropdown-item" href="#">New project...</a></li>
                     <li><a className="dropdown-item" href="#">Settings</a></li>
                     <li><a className="dropdown-item" href="#">Profile</a></li>
-                    {/* <li><hr className="dropdown-divider"></li> */}
+                    <li><hr className="dropdown-divider"></hr></li>
                     <li><a className="dropdown-item" href="#">Sign out</a></li>
                 </ul>
             </div>
