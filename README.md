@@ -13,7 +13,7 @@ This is a React-based portfolio application.  It was built using React, JavaScri
 
 ## Description
 
-This is a professional portfolio about the developer built using React.  The portfolio provides an About section with personal information.  It also features a Portfolio section that showcases current and past projects.  A contact form has been included that delivers messages and provides visitors with an opportunity to send a message.
+This is a professional portfolio about the developer built using React.  The portfolio provides an About section with personal information.  It also features a Portfolio section that showcases current and past projects.  A contact form has been included that delivers messages and provides visitors with an opportunity to send a message.  The deployed application can be found here: [React Portfolio](https://cburkreactportfolio.netlify.app/).
 
 ![Portfolio](./public/assets/react_portfolio.png)
 
