@@ -73,10 +73,11 @@ function ContactForm() {
 
             <input type="hidden" name="form-name" value="contact" />
 
-            <div className="form-group">
+            <div className="form-group" >
+            {/* <div className="form-group" onSubmit={handleSubmit(handleForm)}> */}
                 <label htmlFor="fullName">Name</label>
                 {/* <input type="text" className="form-control" id="fullName" placeholder="Name" name="fullName" value={ formData.fullName } onChange={ handleChange }/> */}
-                <input type="text" className="form-control" id="fullName" placeholder="Name" name="fullName" {...register("fullName", formOptions.fullName)} />
+                <input required title="Please enter your name. This field cannot be blank." type="text" className="form-control" id="fullName" placeholder="Name" name="fullName" {...register("fullName", formOptions.fullName)} />
                 <small className="text-danger">
                     { errors?.fullName && errors.fullName.message }
                 </small>
@@ -85,7 +86,7 @@ function ContactForm() {
             <div className="form-group">
                 <label htmlFor="email">Email address</label>
                 {/* <input type="email" className="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" name="email" value={ formData.email } onChange={ handleChange } /> */}
-                <input type="email" className="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" name="email" {...register("email", formOptions.email)}  />
+                <input required type="email" className="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" name="email" {...register("email", formOptions.email)}  />
                 <small className="text-danger">
                     { errors?.email && errors.email.message }
                 </small>
@@ -94,7 +95,7 @@ function ContactForm() {
             <div className="form-group">
                 <label htmlFor="message">Message</label>
                 {/* <textarea className="form-control" id="message" rows="3" placeholder="Enter your message here..." name="message" value={ formData.message } onChange={ handleChange }></textarea> */}
-                <textarea className="form-control" id="message" rows="3" placeholder="Enter your message here..." name="message" {...register("message", formOptions.message)} ></textarea>
+                <textarea required className="form-control" id="message" rows="3" placeholder="Enter your message here..." name="message" {...register("message", formOptions.message)} ></textarea>
                 <small className="text-danger">
                     { errors?.message && errors.message.message }
                 </small>
