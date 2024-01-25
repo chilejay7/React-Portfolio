@@ -3,7 +3,7 @@
 This is a React-based portfolio application.  It was built using React, JavaScript, Bootstrap, and Netlify.
 
 ## Table of Contents
-
+- [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
