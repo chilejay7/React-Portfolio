@@ -1,8 +1,12 @@
 .about {
-    width: 75%;
+    width: 85%;
+    height: 80%;
     margin: 0 auto;
     text-align: center;
     color: white;
+    background-color: #242424;
+    opacity: .9;
+    padding: 25px;
 }
 
 .about img {

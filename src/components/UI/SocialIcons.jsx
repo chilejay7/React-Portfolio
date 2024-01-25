@@ -1,5 +1,6 @@
 import { SocialIcon } from 'react-social-icons';
 
+// This function is being rendered in the footer.
 function SocialIcons({ urls }) {
 
     return (

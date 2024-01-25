@@ -3,3 +3,11 @@
     opacity: .9;
     height: 90vh;
 }
+
+.bootstrap-icons {
+    margin: 7px;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+}
