@@ -46,11 +46,10 @@ This is a professional portfolio about the developer built using React.  The por
 
 ## Usage
 
-Usage
-Start the development server:``
-    ```bash
-    npm start
-    ``````
+Start the development server:
+   ```bash
+   npm start
+   ``````
 
 Open your browser and visit http://localhost:5050 to view the portfolio application.
 
