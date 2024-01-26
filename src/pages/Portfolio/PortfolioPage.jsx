@@ -39,7 +39,7 @@ const projects = [
     },
     {
         title: "Friendify (Social Network API - NoSQL)",
-        description: "The Friendify social networking application allows end users to share their thoughts, react to another person's thoughts, and also maintain a list of friends from the application's registered users. This is achieved through a database connection that leverages the mongoose package.",
+        description: "The Friendify social networking application allows end users to share their thoughts, reactions, and maintain a list of friends",
         image: "/assets/Friendify.gif",
         url: "https://drive.google.com/file/d/1cLFRmF_TB6ei2AEgiNFzbxYYty4w9wO2/view",
         github: "https://github.com/chilejay7/Friendify-Social-Network-API-NoSQL",
