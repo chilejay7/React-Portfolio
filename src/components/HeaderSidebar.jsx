@@ -2,6 +2,9 @@ import NavMenu from './NavMenu';
 
 import './HeaderSidebar.css'
 
+// The sidebar has been created using bootstrap.  The dropdown is currently commented out but has beeen left for later integration into the application.
+// The NavMenu component is used to render the links and their corresponding icons.
+// I would like to integrate contact icons similar to the footer within the sidebar to provide easy access for end users.
 function HeaderSidebar() {
     const styles = {
         width: "280px",

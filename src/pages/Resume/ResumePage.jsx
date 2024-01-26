@@ -1,5 +1,7 @@
 import './ResumePage.css'
 
+// The basic elements with the title of the page and an hr element for underline are used.
+// An additional component was not used for this section as an image of the resume is used to embed a link to a copy of the resume on Google Drive.
 function Resume() {
     return (
         <>

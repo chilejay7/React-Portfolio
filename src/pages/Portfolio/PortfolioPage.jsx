@@ -1,6 +1,9 @@
 import Apps from "../../components/Apps";
 import './PortfolioPage.css';
 
+// This array is designed to be passed to Apps.jsx as a property where it is destructured on import.
+// This has been created to make adding additional projects very simple.  New objects with the necessary information can be created and the element will be
+// rendered by the Apps.jsx component.
 const projects = [
     {
         title: "Satellite Seeker",
@@ -46,6 +49,8 @@ const projects = [
     },
 ]
 
+// The basic elements with the title of the page and an hr element for underline are used.
+// The project-cards section renders the project cards using the Apps.jsx component.
 function Portfolio() {
     return (
         <>
