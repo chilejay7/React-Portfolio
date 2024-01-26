@@ -22,7 +22,7 @@ function NavMenu() {
             if (link.className === "nav-link text-white active") {
                 link.className = "nav-link text-white"
             }
-            console.log('Classes reset')
+            console.log('Classes reset');
         })
     }
 
