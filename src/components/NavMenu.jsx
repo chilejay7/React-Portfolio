@@ -38,6 +38,9 @@ function NavMenu() {
         console.log(e.target.className);
     }
 
+    // The svg icons have been commented out for now in favor of rendering the icons through the react-bootstrap-icons package for convenience.
+    // Each link uses bootstrap classes.  All link elements are passed as properties to the NavBar component to be rendered.
+    // Each link is given a unique key.  Implementing the uuid package for automated generation of keys throughout the application would be a good idea in future iterations.
     return (
         <NavBar links={[
 

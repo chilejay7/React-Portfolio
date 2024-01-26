@@ -21,3 +21,11 @@
 .nav-link {
     font-size: 1.5rem;
 }
+
+/* Testing responsiveness */
+/* @media (max-width: 800px) {
+    .sidebar-header {
+        flex-direction: row;
+        height: 20vh;
+    }
+} */
