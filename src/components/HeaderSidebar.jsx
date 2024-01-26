@@ -17,7 +17,7 @@ function HeaderSidebar() {
             
             <NavMenu />
 
-            
+            <img className="nav-main-img" src="/assets/family_photo.jpeg" />
 
             <hr></hr>
 
