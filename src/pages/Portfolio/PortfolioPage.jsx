@@ -35,7 +35,7 @@ const projects = [
         description: "This is the original portfolio created using only CSS and HTML.",
         image: "/assets/UpdatedPortfolio.png",
         url: "https://chilejay7.github.io/Professional-Portfolio/",
-        github: "https://chilejay7.github.io/Professional-Portfolio/",
+        github: "https://github.com/chilejay7/Professional-Portfolio",
     },
     {
         title: "Friendify (Social Network API - NoSQL)",
