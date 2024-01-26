@@ -14,14 +14,14 @@ const projects = [
         description: "A client who travels often requested a weather application that was capable of providing the forecast for a given location in order to better plan trips.",
         image: "/assets/always_sunny.png",
         url: "https://chilejay7.github.io/Its-Always-Sunny-in-Weather-App/",
-        github: "https://chilejay7.github.io/Its-Always-Sunny-in-Weather-App/",
+        github: "https://github.com/chilejay7/Its-Always-Sunny-in-Weather-App",
     },
     {
         title: "TV Show Search",
         description: "This application was built using the TVMaze API. Documentation can be found by visiting the site at: https://tvmaze.com/api.",
         image: "/assets/TVShowSearch.png",
         url: "https://chilejay7.github.io/TV-Show-Search/",
-        github: "https://chilejay7.github.io/TV-Show-Search/",
+        github: "https://github.com/chilejay7/TV-Show-Search",
     },
     {
         title: "E-Commerce Application (ORM)",
